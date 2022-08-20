@@ -1,0 +1,178 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.col-sm-3{
+    padding: 0px;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    clip-path: circle();
+    width: 100px;
+}
+.infor{
+    background-image: linear-gradient(to right, #051f69 , #025977);
+    width: 100%;
+    text-align: center;
+}
+.infor .name{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+.infor .speech{
+    color: #8ed82f;
+}
+.infor .sub-name{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.infor .title{
+    color: white;
+    margin-top: 5px;
+}
+.infor .title span{
+    padding: 2px 5px;
+    margin-left: 3px;
+    background: #f58220;
+    border-radius: 5px;
+}
+
+.selection{
+    margin-top: 10px;
+}
+.selection label{
+    border: 1px solid #f58220;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.selection label:hover{
+    background: #f58220;
+    transition: 0.3s;
+    color: white;
+    cursor: pointer;
+}
+.cv-content-container{
+    margin: auto;
+    width: 80%;
+    margin-top: 5px;
+}
+.cv-content-container input{
+    display: none;
+}
+.cv-content-container .cv-content{
+    display: none;
+}
+.cv-content-container [type=radio]:checked ~ .cv-content{
+    display: block;
+}
+.cv-content-container .wexp-item,
+.cv-content-container .education-item,
+.cv-content-container .skill-item
+{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cv-content-container .wexp-item:hover,
+.cv-content-container .education-item:hover,
+.cv-content-container .skill-item:hover
+{
+    background: #f1f1f1;
+}
+.cv-content-container .wexp-item .company-name,
+.cv-content-container .education-item .name,
+.cv-content-container .skill-item .name
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+.cv-content-container .wexp-item .working-time,
+.cv-content-container .education-item .learning-time
+{
+    font-size: 14px;
+    font-style: italic;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.cv-content-container .wexp-item .job-title,
+.cv-content-container .education-item .school-name,
+.cv-content-container .skill-item .skill-desc
+{
+    color: #f58220;
+    font-weight: bold;
+}
+.cv-content-container .wexp-item hr,
+.cv-content-container .education-item hr,
+.cv-content-container .skill-item hr
+{
+    margin: auto;
+}
+.cv-content-container .skill-item .rating{
+    display: flex;
+}
+.cv-content-container .skill-item .rating span{
+    min-width: 20px;
+    text-align: center;
+    margin: 0px;
+    display: inline-block;
+    color: #ffffff00;
+    background: #dddddd;
+    transition: 0.3s;
+}
+.cv-content-container .skill-item .rating span.rate{
+    background: yellow;
+}
+.cv-content-container .skill-item:hover .rating .rate-hover{
+    color: black;
+}
+.cv-content-container .demo{
+    margin: 10px auto;
+}
+.cv-content-container .demo .demo-item a{
+    text-decoration: none;
+}
+footer .contact{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+footer .contact a{
+    width: fit-content;
+    font-size: 18px;
+    color: black;
+    margin-top: 2px;
+    transition: 0.3s;
+    text-decoration: none;
+    padding: 2px;
+}
+footer{
+    background-image: linear-gradient(to right, #051f69 , #025977);
+}
+footer .contact a:hover{
+    text-decoration: underline;
+}
+footer .contact a{
+    color: white;
+}
+footer .contact a i{
+    margin-right: 5px;
+}
+.cv-content-container .demo .cv-content a{
+    color: black;
+    text-decoration: none;
+}
+.cv-content-container .demo .cv-content a .name{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+footer .copyright{
+    color: white;
+}
