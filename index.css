@@ -19,7 +19,7 @@ a{
 }
 .infor .name{
     font-size: 40px;
-    color: white;
+    color: white; 
     font-weight: bold;
 }
 .infor .speech{
@@ -49,14 +49,13 @@ a{
     width: 100%;
     padding: 20px;
     text-align: center;
+    transition: 0.3s;
     cursor: pointer;
 }
 
 .selection label:hover{
     background: #f58220;
-    transition: 0.3s;
     color: white;
-    cursor: pointer;
 }
 .cv-content-container{
     margin: auto;
@@ -113,6 +112,11 @@ a{
 .cv-content-container .skill-item hr
 {
     margin: auto;
+}
+
+.cv-content-container .demo .demo-item:hover .name{
+    color: #f58220;
+    transition: 0.3s;
 }
 .cv-content-container .skill-item .rating{
     display: flex;
@@ -174,5 +178,9 @@ footer .contact a i{
     text-align: center;
 }
 footer .copyright{
+    color: white;
+}
+.selector{
+    background: #f58220;
     color: white;
 }

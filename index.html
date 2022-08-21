@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>Document</title>
+    <title>Liem Nguyen</title>
 </head>
 
 <body>
@@ -28,22 +28,22 @@
     <div class="selection container-fluid">
         <div class="row">
             <div class="col-sm-3">
-                <label for="wexp">
+                <label for="wexp" id="lb-wexp" onclick="selector('wexp')">
                     <span>Experience</span>
                 </label>
             </div>
             <div class="col-sm-3">
-                <label for="education">
+                <label for="education" id="lb-education" onclick="selector('education')">
                     <span>Education</span>
                 </label>
             </div>
             <div class="col-sm-3">
-                <label for="skill">
+                <label for="skill" id="lb-skill" onclick="selector('skill')">
                     <span>Skill</span>
                 </label>
             </div>
             <div class="col-sm-3">
-                <label for="demo">
+                <label for="demo" id="lb-demo" onclick="selector('demo')">
                     <span>Demo</span>
                 </label>
             </div>
@@ -134,7 +134,7 @@
             </div>
         </div>
         <div class="skill">
-            <input type="radio" name="filter" value="" id="skill" >
+            <input type="radio" name="filter" value="" id="skill">
             <div class="cv-content">
                 <div class="skill-item">
                     <div class="name">Language</div>
@@ -314,11 +314,44 @@
                 <i class="fa fa-skype" aria-hidden="true"></i>
                 liem14021998
             </a>
+            <a href="mailto:liem14021998@gmail.com">
+                <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+                liem14021998@gmail.com
+            </a>
         </div>
         <div class="copyright">
             Copyright Liem Nguyen
         </div>
     </footer>
+    <script>
+        function selector(selector) {
+            var wexp = document.getElementById('lb-wexp')
+            var edu = document.getElementById('lb-education')
+            var skill = document.getElementById('lb-skill')
+            var demo = document.getElementById('lb-demo')
+
+            wexp.className = ''
+            edu.className = ''
+            skill.className = ''
+            demo.className = ''
+
+            switch (selector) {
+                case 'wexp':
+                    wexp.className = 'selector'
+                    break;
+                case 'education':
+                    edu.className = 'selector'
+                    break;
+                case 'skill':
+                    skill.className = 'selector'
+                    break;
+                case 'demo':
+                    demo.className = 'selector'
+                    break;
+                default:
+            }
+        }
+    </script>
 </body>
 
 </html>
